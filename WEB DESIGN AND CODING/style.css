@@ -1,0 +1,279 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type:none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 1.5rem;
+}
+body{
+    background-image: url(./image/background.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+/*CSS CODES for Nav*/
+nav{
+    background: #f3670a;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 68px;
+    width: 100%;
+}
+.logo{
+    margin-top: 10px;
+}
+.logo-img{
+    align-items: space-between;
+}
+.mainMenu{
+    display: flex;
+    margin-right: 5%;
+}
+.mainMenu li a{
+    display: inline-block;
+    padding: 15px;
+    color: rgb(128, 31, 31);
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: 0.5px solid #f3670a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.mainMenu li:hover{
+    background-color: rgb(252, 146, 104);
+    transition: 0.7;
+}
+/*CSS CODES FOR BANNER*/
+.banner-text{
+    height: 650px;
+    max-width: 750px;
+    margin: 100px auto 0 auto;
+    background: #f3670a34;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 50px;
+}
+.content-conteiner{
+    max-width: 1000px;
+    background: #f76300b9;
+    margin: 75px auto 0 auto;
+    line-height: 1.6rem;
+    padding: 20px 50px;
+    display: flex;
+    border-radius: 10%;
+}
+.recipes-container{
+    max-width: 1000px;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.recipe{
+    padding: 10px;
+    margin-bottom:5px;
+    /*flex:1;*/
+    margin: 5px
+}
+h2{
+    color: #f3670a;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.button a{
+    display: block;
+    width: 100px;
+    height: 25px;
+    background-color: #f3670a91;
+    border-radius: 200px;
+    color: rgb(128, 31, 31);
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center
+}
+.button a:hover{
+   background: rgba(252, 217, 104, 0.911);
+}
+footer{
+    text-align: center;
+    width: 100%;
+    height: 15vh;
+    margin: 20px auto auto auto;
+    padding-top: 20px;
+    color: #f3670aef;
+}
+footer a{
+    color:#f3670aef;
+}
+/*CSS CODES FOR CONTACT*/
+footer{
+    text-align: center;
+    width: 100%;
+    height: 15vh;
+    margin: 50px auto auto auto;
+    padding-top: 5px;
+    color: #f3670aef;
+}
+footer a{
+    color: #f3670aef;
+}
+.container{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#contact{
+    background: white;
+    padding: 20px;
+    margin: 50px 0px;
+    box-shadow: inset 0 0 1rem rgb(46, 15, 6);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+#contact h2{
+    display: block;
+    font: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.form-control{
+    border: none;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea{
+    width: 100%;
+    border: 2px solid rgba(184, 87, 18, 0.801);
+    background: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+#contact textarea{
+    height: 120px;
+    max-width: 100%;
+    resize: none;
+}
+#contact button[type="submit"]{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: rgb(11, 172, 46);
+    color: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+/*CSS CODE FOR HOMEPAGE*/
+.banner{
+    top: 20%;
+    left: 35%;
+    position: absolute;
+    background-color: rgba(255, 68, 0, 0.63);
+    border-radius: 15px;
+    padding: 14px;
+}
+.banner h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #411808;
+    width: 95%;
+    line-height: 4rem;
+    letter-spacing: 0.1;
+    text-shadow: 1px 1px #411808;
+    animation: moveHeader 2s 1.8s forwards;
+    opacity: 0;
+    animation: moveHeader 1.5s 0.5s forwards;
+}
+.banner p{
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    color: rgb(65, 36, 29);
+    width: 100%;
+    letter-spacing: 0.05rem;
+    text-shadow: 1px 1px  rgb(77, 43, 35);
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: moveHeader 1.5s 0.7s forwards;
+}
+.banner button{
+    width: 12rem;
+    height: 4rem;
+    background: rgba(252, 237, 101, 0.829);
+    border: none;
+    color: rgb(83, 36, 19);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 3rem;
+    opacity: 0;
+    animation: moveHeader 1.5s 0.9 forwards;
+    margin: 10px;
+    padding: 5px;
+}
+.banner button:hover{
+    color: rgba(6, 216, 34, 0.658);
+    background-color:  rgba(255, 199, 233, 0.507);
+}
+@keyframes moveHeader{
+    0%{
+        transform: translateX(15rem);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+.video-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+.bg-video{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+}
+/*RESPONSIVE CSS*/
+@media (max-width:768px){
+    .banner{
+        width: 315px;
+        margin: -45px;
+    }
+    .banner h1{
+        font-size: 2rem;
+    }
+    .banner p{
+        font-size: 1;
+    }
+    .banner button{
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.5;
+    }
+    .video-container{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .bg-video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+  
+    
+}
